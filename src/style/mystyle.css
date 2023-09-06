@@ -1,0 +1,230 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1500px){
+    .forSmaylics{
+        display: flex;
+        align-items: center;
+       justify-content: center;
+       /* overflow-x: auto; */
+        /* white-space: nowrap;
+        flex-wrap: nowrap; */
+        }
+       .forSmaylics >*{
+        margin-right: 40px;
+        /* flex: 0 0 auto; */
+         
+       }
+       .myVideo{
+     
+        width: 100%;
+        height:49rem; 
+        pointer-events: none;
+
+     }
+   
+     
+}
+
+.Top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+
+ .ParadiseLogo{
+    font-size: 1.4rem;
+    font-family: fantasy;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 4px;    
+ }
+
+
+   .hr{
+    border-bottom: 1px solid rgb(202, 179, 179);
+    text-align: center; 
+    z-index: 0;
+
+ }
+   .topFirst{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+   }
+   .topFirstforLesswidth{
+    display: flex;
+    flex-direction: row-reverse;
+     justify-content: space-around;
+    margin-top: 1vh;
+    
+   }
+   .topSecond{
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+   }
+   .topFirst span{
+  
+    font-size: 20px;
+   }
+   .topSecond span{
+    margin-right: 2rem;
+   }
+
+                      /*  For Smaylics */
+
+    .ParentOfTops{
+        background-color: rgb(255, 255, 255);
+        position: sticky;
+        top: 0; 
+    }
+    .forOpacity{
+        opacity: 0.9;
+
+    }
+   .topSecond div{
+    margin:2rem 2rem 0 0 ;
+    color: wheat;
+    font-size: 30px;
+   }
+   .icon{
+    text-decoration: none;
+    padding: 0.5rem;
+    display: flex;
+   }
+   .iconSelf:hover + .textForIcon {
+    opacity: 1;  
+}
+
+.textForIcon {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    padding: 10px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    bottom: 2.2rem;
+ 
+}
+.textForIconPhoneSize{
+    margin-left: 13px;
+    }
+
+.chessburger{
+    display: none;
+}
+
+.hamburger{
+    position: absolute;
+    background-color: white;
+    width: 25rem; 
+    height: 50rem;      
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 3px 7px rgba(10, 10,10, 50);
+   z-index: 2;
+}
+
+.hamburgersItem{
+    display: flex;
+    flex-direction: column;    
+}
+
+.cssInHamburger{
+    color: black;
+    text-decoration: none;
+    margin: 0.2rem 0 0 2rem;
+    padding: 0.2rem;
+    font-size: 1.3rem;
+   
+
+}
+.Xhamburger{
+    cursor: pointer;
+     background-color: white;
+     border: none;     font-size: 2rem;
+     margin-right: 2.5rem;
+     margin-top: 0.7rem;
+     overflow: auto;
+     z-index: 1;
+}
+
+
+.canvasBody div{
+    margin: 2rem 0 0 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+
+
+@media (max-width: 1500px) {
+    .Top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .forSmaylics{
+        display: flex;
+        align-items: center;
+        overflow-y: auto;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+        }
+       .forSmaylics >*{
+        margin-right: 40px;
+        flex: 0 0 auto;
+         
+       }
+
+    .topFirst, .topSecond {
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .textForIcon {
+        top: 0;
+        right: 0;
+        font-size: 16px;
+        position: relative;
+       
+    }
+    .textForIconPhoneSize{
+        color: black;
+    }
+    .hamburger{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: nowrap;
+
+         position: relative;
+         margin: 1rem 2rem 0 0;
+    }
+    .cssInHamburger{
+        color: black;
+        text-decoration: none;
+        width: 100%;
+        margin: 1rem 0 0 2rem;  
+        padding: 0.2rem;
+        font-size: 1.3rem;
+    }
+    .myVideo{
+        max-width: 95%;
+        height: 35rem;
+        display: block; 
+        margin: 0 auto; 
+        object-fit: cover;
+        pointer-events: none;
+
+     }
+}
+

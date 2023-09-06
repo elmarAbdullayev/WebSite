@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  
+}
+
+
+.ParentRolls{
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   padding-top: 20px;
+   padding-bottom: 100px;
+}
+
+.RollsText{
+    text-align: center;
+   font-size: 60px;
+   font-family: fantasy;
+   color: red;
+   margin-top: 3rem;
+}
+
+.dotted{
+    border-bottom: 4px dotted rgb(43, 31, 31);   
+    display: block;    
+}
+
+.FlexNamePrice{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+
+}
+
+.TempuraRollstext{
+    text-align: center;
+    margin-top: 7rem;
+    color: red;
+}
+
+@media (max-width: 1000px) {
+  
+    .RollsText {
+        font-size: 40px;
+    }
+    
+}

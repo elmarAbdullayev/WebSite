@@ -1,0 +1,35 @@
+
+@media (min-width:1500px) {
+    .parentsFooter{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+         margin-top: 1.5rem;
+         text-align: center;
+      
+    }
+    .hrr{
+        width: 50%;
+        margin-left: 25%;
+        z-index: -1;
+    }
+
+    
+}
+
+@media (max-width:1500px) {
+    .parentsFooter{
+        display: flex;
+       flex-direction: column;
+       padding: 1rem;
+        margin-top: 1.5rem;
+        text-align: center;
+    
+    }
+    .hrr{
+        width: 70%;
+        margin-left: 15%;
+        z-index: -1;
+    }
+ 
+}
